@@ -120,7 +120,7 @@ void quick(int* mass, int first, int last) {
 }
 int main() {
 	printf("Select type:\n1 - file [To work with a text file, first add it to the directory with the solution]\n2 - random\n");
-	//Для работы с файлом, надо предварительно добавить его в каталог с решением
+	//Г„Г«Гї Г°Г ГЎГ®ГІГ» Г± ГґГ Г©Г«Г®Г¬, Г­Г Г¤Г® ГЇГ°ГҐГ¤ГўГ Г°ГЁГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ ГўГЁГІГј ГҐГЈГ® Гў ГЄГ ГІГ Г«Г®ГЈ Г± Г°ГҐГёГҐГ­ГЁГҐГ¬
 	int type = 0;
 	int mass[SIZE];
 	int mass1[SIZE];
