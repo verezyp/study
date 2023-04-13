@@ -7,7 +7,7 @@ void bubble(int* mass) {
 	unsigned long long srav = 0, per = 0;
 	double PCFreq = 0.0;
 	__int64 CounterStart = 0;
-	int proverka = 0;
+	int check = 0;
 	LARGE_INTEGER li;
 	if (!QueryPerformanceFrequency(&li))
 	{
@@ -26,14 +26,14 @@ void bubble(int* mass) {
 				per += 1;
 				mass[j] = mass[j + 1];
 				mass[j + 1] = x;
-				proverka++;
+				check++;
 			}
 		}
-		if (proverka == 0)
+		if (check == 0)
 		{
 			break;
 		}
-		proverka = 0;
+		check = 0;
 	}
 	QueryPerformanceCounter(&li);
 	/*long double t2 = clock();
